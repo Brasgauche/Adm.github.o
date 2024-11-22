@@ -1,0 +1,191 @@
+// Variables
+$primary-color: #007bff
+$secondary-color: #6c757d
+$light-color: #f8f9fa
+$dark-color: #343a40
+
+// Global Styles
+*,
+*::before,
+*::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: Arial, sans-serif
+  line-height: 1.6
+  background-color: $light-color
+  color: $dark-color
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+
+// Navbar
+.navbar
+  background-color: $light-color
+  
+  .navbar-brand
+    color: $dark-color
+    &:hover
+      color: $primary-color
+  
+  .nav-link
+    color: $dark-color
+    &:hover
+      color: $primary-color
+
+// Hero Section
+.hero-image
+  width: 100%
+  height: 400px
+  object-fit: cover
+  filter: brightness(0.7)
+
+.position-relative
+  position: relative
+  .text-center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+
+    h1, h2, p
+      margin: 0
+      color: $light-color
+
+    h1
+      font-size: 2.5rem
+
+    h2
+      font-size: 2rem
+      color: $primary-color
+
+// Featured Services
+.badge
+  background-color: $primary-color
+  color: $light-color
+
+h2
+  font-size: 1.5rem
+  color: $dark-color
+  margin-bottom: 1rem
+
+.text-muted
+  color: $secondary-color
+
+.featured-card
+  height: 250px
+  background-color: $light-color
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  border-radius: 8px
+  text-align: center
+  padding: 20px
+
+  img
+    width: 50px
+    height: auto
+    margin-bottom: 10px
+
+  h5
+    font-size: 1.2rem
+    margin: 10px 0
+    text-align: left
+
+  p
+    font-size: 0.9rem
+    color: $secondary-color
+    text-align: left
+
+// Full-width image
+.container-fluid img
+  width: 100%
+  height: auto
+  object-fit: cover
+
+// Contact Section
+.contact-form
+  background-color: $light-color
+  border: 1px solid $secondary-color
+  padding: 20px
+  border-radius: 8px
+  
+  .form-control
+    border-radius: 4px
+    margin-bottom: 10px
+
+  button
+    background-color: $primary-color
+    color: $light-color
+    &:hover
+      background-color: darken($primary-color, 10%)
+
+// Form input and button styles
+.container .form-control
+  border-radius: 4px
+  margin-bottom: 15px
+  padding: 10px
+  border: 1px solid $secondary-color
+
+button
+  padding: 10px
+  background-color: $primary-color
+  border: none
+  color: $light-color
+  font-size: 1rem
+
+  &:hover
+    background-color: darken($primary-color, 10%)
+
+// Responsive Design
+@media (max-width: 768px)
+  .navbar ul
+    flex-direction: column
+    li
+      margin-bottom: 1rem
+
+  .hero-image
+    height: auto
+
+  .position-relative
+    padding: 1rem
+    h2
+      font-size: 1.5rem
+
+  .container
+    padding: 0 10px
+
+@media (max-width: 480px)
+  body
+    font-size: 0.9rem
+
+  .navbar
+    .navbar-brand
+      font-size: 1.5rem
+
+  .hero-image
+    height: 300px
+
+.footer
+  background-color: #f8f9fa // Couleur de fond claire
+  border-top: 1px solid #dee2e6 // Ligne de séparation
+  color: #6c757d // Couleur du texte
+
+  p
+    font-size: 0.9rem
+    margin: 0
+
+    .text-primary
+      color: #007bff // Couleur primaire pour "MolenGeek"
+      font-weight: bold
+
+  // Styles responsives pour les petits écrans
+  @media (max-width: 768px)
+    text-align: center // Centrer le texte pour les petits écrans
+
+body, html
+  margin: 0
+  padding: 0
