@@ -1,0 +1,88 @@
+// Définir les variables
+$primary-color: #007bff
+$secondary-color: #6c757d
+$text-dark: #343a40
+$text-light: #f8f9fa
+$background-color: #ffffff
+
+// Navbar
+.navbar
+  height: 80px
+  background-color: $text-light
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+  .navbar-brand
+    font-size: 1.5rem
+    color: $text-dark
+    font-weight: bold
+
+  .navbar-nav .nav-link
+    color: $text-dark
+    &:hover
+      color: $primary-color
+
+  .navbar-toggler-icon
+    background-color: $text-dark
+
+// Hero Section
+.hero-section
+  position: relative
+  background-color: $text-light
+  height: 500px
+
+  .hero-image
+    width: 100%
+    height: auto
+
+  .hero-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+
+    h1
+      color: $text-dark
+
+    h2
+      color: $primary-color
+
+// Service Card (pour chaque service)
+.service-card
+  background-color: $text-light
+  padding: 20px
+  border-radius: 10px
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  height: 250px
+  text-align: center
+
+  img
+    width: 50px
+    height: 50px
+    margin-bottom: 10px
+
+  h5
+    color: $primary-color
+    text-align: left
+    font-weight: bold
+
+  p
+    color: $secondary-color
+    text-align: left
+
+// Contact Form
+.contact-form
+  padding: 30px
+  border-radius: 8px
+  background-color: $text-light
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+
+  .form-control
+    margin-bottom: 15px
+
+  .btn-primary
+    background-color: $primary-color
+    border-color: $primary-color
+    &:hover
+      background-color: darken($primary-color, 10%)
+      border-color: darken($primary-color, 10%)
